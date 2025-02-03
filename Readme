@@ -1,52 +1,35 @@
-# Proyecto Sistema de microinversiones y recomendación de negocios
+# Proyecto Sistema de Microinversiones y Recomendación de Negocios
 
-Bienvenido al proyecto de Sistema de microinversiones y recomendación de negocios. Este proyecto tiene como objetivo desarrollar una plataforma que permita a los usuarios analizar y recibir recomendaciones personalizadas basadas en sus intereses para inversiones en negocios de acuerdo al
-estudio del sentimiento del mercado y lecturas y proyecciones a futuro por medio de modelos.
+Bienvenido al proyecto de Sistema de Microinversiones y Recomendación de Negocios. Este proyecto tiene como objetivo ayudar a pequeños negocios a tomar decisiones de inversión informadas, mediante el análisis financiero y la segmentación en nichos de mercado. La plataforma sugiere oportunidades de inversión basadas en modelos de regresión y técnicas de clustering.
 
 ## Características
 
-- **Microinversiones**: Permite a los usuarios invertir pequeñas cantidades de dinero en una variedad de negocios.
-- **Recomendaciones personalizadas**: Utiliza algoritmos de recomendación para sugerir negocios que se alineen con los intereses y perfil de inversión del usuario.
-- **Análisis de rendimiento**: Proporciona herramientas para analizar el rendimiento de las inversiones realizadas.
+- **Microinversiones**: Sugiere oportunidades de inversión basadas en el análisis de datos financieros.
+- **Recomendaciones personalizadas**: Utiliza algoritmos de recomendación para sugerir negocios alineados con el perfil de inversión.
+- **Análisis de rendimiento**: Emplea modelos de regresión y análisis de indicadores técnicos (medias móviles, volumen, etc.) para evaluar el mercado.
+- **Segmentación de nichos**: Agrupa negocios en nichos de mercado mediante técnicas de clustering (K-Means).
 
-## Tecnologías utilizadas
+## Tecnologías Utilizadas
 
-- **Backend**: Python
-- **Frontend**: Por decidir
+- **Backend**: Python 3.12
 - **Base de datos**: Sqlite3
-- **Modelos usados**: Machine Learning con Python (Regresión lineal, Agrupación (Kmeans))
+- **Machine Learning**: Scikit-learn (Regresión lineal, K-Means)
+- **Obtención de Datos**: yfinance
+- **Visualización y Análisis**: Pandas, NumPy, Matplotlib, Seaborn
 
-## Instalación
+## Estructura del Proyecto
 
-1. Clona el repositorio:
-
-    ```bash
-    git clone https://github.com/tu-usuario/proyecto-microinversiones.git
-    ```
-
-2. Navega al directorio del proyecto:
-
-    ```bash
-    cd proyecto-microinversiones
-    ```
-
-3. Instala las dependencias:
-
-    ```bash
-    cd backend
-    pip install -r requirements.txt
-    ```
-
-## Contribución
-
-Si deseas contribuir a este proyecto, por favor sigue los siguientes pasos:
-
-1. Haz un fork del repositorio.
-2. Crea una nueva rama (`git checkout -b feature/nueva-funcionalidad`).
-3. Realiza tus cambios y haz commit (`git commit -am 'Añadir nueva funcionalidad'`).
-4. Sube tus cambios a tu fork (`git push origin feature/nueva-funcionalidad`).
-5. Crea un Pull Request.
-
-## Licencia
-
-Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
+```plaintext
+proyectoIA/
+├── data/                  # Datos del proyecto
+│   ├── raw/               # Datos sin procesar
+│   └── processed/         # Datos transformados
+├── notebooks/             # Notebooks para análisis y prototipado
+├── src/                   # Código fuente
+│   ├── data/              # Módulo para obtención y preprocesamiento de datos
+│   ├── analysis/          # Módulo para análisis financiero y clustering
+│   ├── recommendation/    # Módulo para el sistema de recomendación
+│   └── api/               # Código para la API (por ejemplo, FastAPI)
+├── tests/                 # Pruebas unitarias
+├── requirements.txt       # Dependencias del proyecto
+└── README.md              # Este archivo
