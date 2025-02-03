@@ -19,6 +19,7 @@ Bienvenido al proyecto de Sistema de Microinversiones y Recomendación de Negoci
 
 ## Estructura del Proyecto
 
+```plaintext
 proyectoIA/
 ├── data/                  # Datos del proyecto
 │   ├── raw/               # Datos sin procesar
@@ -32,3 +33,4 @@ proyectoIA/
 ├── tests/                 # Pruebas unitarias
 ├── requirements.txt       # Dependencias del proyecto
 └── README.md              # Este archivo
+```
